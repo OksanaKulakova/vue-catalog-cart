@@ -1,10 +1,19 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onBeforeMount } from 'vue'
 import { useCatalogStore } from '@/stores/catalog'
+import json from '@/stores/catalog.json'
 import CatalogItem from './CatalogItem.vue'
 
 const store = useCatalogStore()
 const catalog = computed(() => store.state)
+
+onBeforeMount(() => {
+  const data = JSON.parse(JSON.stringify(json))
+
+  store.$patch({
+    state: data
+  })
+})
 </script>
 
 <template>
