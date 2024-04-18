@@ -62,6 +62,8 @@ const catalog = computed(() => store.state)
     display: flex;
     flex-direction: column;
     gap: 8px;
+    max-height: 80%;
+    overflow-y: auto;
   }
 }
 </style>
