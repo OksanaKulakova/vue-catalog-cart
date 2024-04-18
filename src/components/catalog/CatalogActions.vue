@@ -52,7 +52,6 @@ function removeNumber() {
 }
 
 function onClickAway() {
-  console.log('11')
   changeOpenKeyboard()
 }
 </script>

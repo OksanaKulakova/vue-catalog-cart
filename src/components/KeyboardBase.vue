@@ -1,37 +1,10 @@
 <script setup lang="ts">
-// import { ref, computed, type Ref } from 'vue'
-
 const emit = defineEmits<{
   add: [number: number]
   remove: []
 }>()
 
 const numbers: number[] = [7, 8, 9, 4, 5, 6, 1, 2, 3]
-
-// const count: Ref<number> = ref(0)
-
-// const disabledButton = computed<boolean>(() => count.value === 0)
-
-// function increment(): void {
-//   count.value++
-// }
-
-// function decrement(): void {
-//   if (count.value > 0) {
-//     count.value--
-//   }
-// }
-
-// function addToCart(): void {
-//   emit('addToCart', count.value)
-//   count.value = 0
-// }
-
-// const open: Ref<boolean> = ref(false)
-
-// function openKeyboard() {
-//   open.value = true
-// }
 </script>
 
 <template>
